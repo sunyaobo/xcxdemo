@@ -1,0 +1,50 @@
+<view>
+   <swiper indicator-dots="{{ dots }}" indicator-color="#f00" indicator-active-color="#00f" autoplay="{{ true }}" interval="2000" circular="{{ true }}" vertical="{{ false }}">
+     <block wx:for="{{imgUrls}}">
+       <swiper-item class="si">
+         <image src="{{item}}" class="slide-image" />
+       </swiper-item>
+     </block>
+   </swiper>
+</view>
+
+<view>
+    <view>
+       <icon type="success" size="20" color="#f00"/>
+        成功
+    </view>
+</view>
+
+<view class="section">
+  <view class="section__title">您选择的城市:</view>
+
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+
+
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+  
+<view>
+    <view>视频功能</view>
+    <video autoplay="{{ false }}" objectFit="cover" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{ true }}"  poster="/images/mm.jpg"></video>
+</view>

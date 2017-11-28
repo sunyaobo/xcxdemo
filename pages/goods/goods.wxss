@@ -1,0 +1,18 @@
+.goods-info-nav {
+    display:flex;
+    height: 69rpx;
+}
+
+.goods-info-nav view {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid #f00; */
+
+}
+
+.active {
+    /* color: #f00; */
+    border-bottom:2px solid #f00;
+}

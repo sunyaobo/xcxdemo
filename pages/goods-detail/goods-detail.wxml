@@ -1,0 +1,6 @@
+<view>
+    详情页
+
+    <button bindtap="goback">Button</button>
+    
+</view>

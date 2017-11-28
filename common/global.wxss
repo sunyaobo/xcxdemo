@@ -1,0 +1,4 @@
+.info-title {
+    font-size: 60rpx;
+    color: #f00;
+}

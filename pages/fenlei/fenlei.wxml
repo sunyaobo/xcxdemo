@@ -1,0 +1,32 @@
+<import src="./moban.wxml" />
+<view>
+    <view class="info-title">员工信息</view>
+    <view>
+         <view wx:for="{{ list }}" wx:for-index="i" wx:for-item="v" 
+         wx:key="i">
+             {{ i+1 }}--<text>姓名：</text> {{ v.name }}
+             <text>地址：</text> {{ v.address }}
+         </view>
+    </view>
+
+</view>
+
+<view>
+    <switch checked="{{ flag }}" bindchange="toggle"/>
+    <!--<view wx:if="{{ flag }}">显示/隐藏</view> -->
+    <view hidden="{{ flag }}">显示/隐藏</view>
+</view>
+
+<block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>
+
+
+
+<template is="test" data="{{ ...info }}"></template>
+
+<view>{{ msg }}</view>
+<button bindtap="go" data-title="张三" data-address="北京">绑定事件</button>
+
+<button bindtap="goback">返回到上一页</button>

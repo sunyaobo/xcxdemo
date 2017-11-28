@@ -1,0 +1,12 @@
+
+<template name="test">
+      <view>
+           {{ title }}
+      </view>
+
+      <view>
+        <view>{{ con }}</view>
+
+        <text>发布时期：{{ pubdate }}</text>
+      </view>
+</template>

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg:"分类hahaha",
+    msg:"分类hahaha-git",
     list:[
       {id:1001,name:'alice',address:"北京"},
       {id:1002,name:'alice22',address:"上海"},

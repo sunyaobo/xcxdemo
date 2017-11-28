@@ -29,4 +29,4 @@
 <view>{{ msg }}</view>
 <button bindtap="go" data-title="张三" data-address="北京">绑定事件</button>
 
-<button bindtap="goback">返回到上一页</button>
+<button bindtap="goback">返回到上一页git</button>

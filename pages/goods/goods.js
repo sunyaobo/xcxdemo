@@ -77,7 +77,7 @@ Page({
    */
   onLoad: function (options) {
       wx.setNavigationBarTitle({
-          title:"商品信息"
+          title:"商品信息111"
       })
 
       wx.showNavigationBarLoading()
@@ -96,7 +96,7 @@ Page({
             /* this.setData({
                 src: res.tempImagePath
             }) */
-        }
+        },
     })
 },
 error(e) {
